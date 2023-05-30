@@ -21,7 +21,9 @@ const App = () => {
         <img src="./img/logo.jpg" alt="" width={150} />
       </nav> */}
       <div className="header">
-        <h1>AKSMDK</h1>
+        <div className="esquerda">
+        <h1>John Wick 4</h1>
+        </div>
         <img
           src={`https://image.tmdb.org/t/p/original/h8gHn0OzBoaefsYseUByqsmEDMY.jpg?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
           alt=""
