@@ -22,21 +22,24 @@ const App = () => {
       </nav> */}
       <div className="header">
         <h1>AKSMDK</h1>
-          <img
-            src={`https://image.tmdb.org/t/p/original/h8gHn0OzBoaefsYseUByqsmEDMY.jpg?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
-            alt=""
-            className="image-container"
-          />
+        <img
+          src={`https://image.tmdb.org/t/p/original/h8gHn0OzBoaefsYseUByqsmEDMY.jpg?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
+          alt=""
+          className="image-container"
+        />
       </div>
-      <div className="filmes">
-        {data.map((filme) => (
-          <img
-            src={`https://image.tmdb.org/t/p/original${filme.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
-            alt="Filme"
-            key={filme.id}
-            width={180}
-          />
-        ))}
+      <div className="populares">
+        <h1>Populares na Netflix</h1>
+        <div className="filmes">
+          {data.map((filme) => (
+            <img
+              src={`https://image.tmdb.org/t/p/original${filme.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
+              alt="Filme"
+              key={filme.id}
+              width={180}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

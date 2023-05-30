@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   background-color: black;
@@ -11,16 +14,22 @@ nav {
   background-color: black;
   position: sticky;
 }
-
+.populares {
+  margin-top: 3rem;
+}
+.populares h1 {
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 .filmes {
   display: flex;
   gap: 1rem;
   overflow: scroll;
-  margin-top: 3rem;
 }
 
 .filmes img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header {
@@ -40,9 +49,9 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10px; 
-  height: 300px; 
-  background: linear-gradient(to top, rgba(0, 0, 0 ,1), rgba(0, 0, 0 ,0));
+  bottom: -10px;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .header::before {
   content: "";
@@ -50,8 +59,8 @@ nav {
   left: 30%;
   right: 0;
   width: 40%;
-  height: 100%; 
-  background: linear-gradient(to right, rgba(0, 0, 0 ,1), rgba(0, 0, 0 ,0));
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   /* background-color: green; */
   z-index: 1;
 }
