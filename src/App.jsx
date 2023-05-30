@@ -1,28 +1,43 @@
 import React, { useEffect, useState } from "react";
 import { getData } from "./request";
+import "./App.css";
 
 const App = () => {
-  const [data, setData] = useState(null);
-  const [imagem, setImagem] = useState("")
+  const [data, setData] = useState([]);
 
   async function usarDadosDaAPI() {
     const data = await getData();
-    setData(data);
-    setImagem(`https://image.tmdb.org/t/p/original${data.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`)
-    console.log(data);
+    const data2 = [...data.results];
+    setData(data2);
   }
+
   useEffect(() => {
     usarDadosDaAPI();
   }, []);
 
   return (
     <div>
-      {data && (
-        <>
-          <h1>{data.original_title}</h1>
-          <img src={imagem} alt="asdas" width={200}/>
-        </>
-      )}
+      {/* <nav>
+        <img src="./img/logo.jpg" alt="" width={150} />
+      </nav> */}
+      <div className="header">
+        <h1>AKSMDK</h1>
+          <img
+            src={`https://image.tmdb.org/t/p/original/h8gHn0OzBoaefsYseUByqsmEDMY.jpg?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
+            alt=""
+            className="image-container"
+          />
+      </div>
+      <div className="filmes">
+        {data.map((filme) => (
+          <img
+            src={`https://image.tmdb.org/t/p/original${filme.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
+            alt="Filme"
+            key={filme.id}
+            width={180}
+          />
+        ))}
+      </div>
     </div>
   );
 };
