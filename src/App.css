@@ -30,15 +30,15 @@ nav {
   scrollbar-color: transparent transparent; 
 }
 .filmes::-webkit-scrollbar {
-  width: 6px; /* Ajuste a largura do scrollbar */
+  width: 6px; 
 }
 
 .filmes::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Define a cor do thumb do scrollbar */
+  background-color: transparent; 
 }
 
 .filmes::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.3); /* Define a cor do thumb do scrollbar ao passar o mouse */
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 .filmes img {
