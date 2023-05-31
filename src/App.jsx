@@ -3,12 +3,16 @@ import { getData } from "./request";
 import "./App.css";
 
 const App = () => {
-  const [data, setData] = useState([]);
+  const [populares, setPopulares] = useState([]);
+  const [topRated, setTopRated] = useState([]);
 
   async function usarDadosDaAPI() {
-    const data = await getData();
-    const data2 = [...data.results];
-    setData(data2);
+    const popular = await getData("https://api.themoviedb.org/3/movie/popular");
+    const top_rated = await getData("https://api.themoviedb.org/3/movie/top_rated");
+    const populares = [...popular.results];
+    const top = [...top_rated.results]
+    setPopulares(populares);
+    setTopRated(top)
   }
 
   useEffect(() => {
@@ -33,7 +37,20 @@ const App = () => {
       <div className="populares">
         <h1>Populares na Netflix</h1>
         <div className="filmes">
-          {data.map((filme) => (
+          {populares.map((filme) => (
+            <img
+              src={`https://image.tmdb.org/t/p/original${filme.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
+              alt="Filme"
+              key={filme.id}
+              width={180}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="top-rated">
+        <h1>Mais vistos</h1>
+        <div className="filmes">
+          {topRated.map((filme) => (
             <img
               src={`https://image.tmdb.org/t/p/original${filme.poster_path}?api_key=5f080ba816591e52e96822a9e1fdbcf9`}
               alt="Filme"
