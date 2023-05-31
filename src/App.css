@@ -87,3 +87,7 @@ nav {
 .esquerda h3 {
 margin: 1rem 0;
 }
+
+.esquerda h1 {
+  font-size: 3rem;
+}

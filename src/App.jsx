@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getData } from "./request";
 import "./App.css";
+import Navbar from "./Navbar";
 
 const App = () => {
   const [populares, setPopulares] = useState([]);
@@ -27,9 +28,7 @@ const App = () => {
 
   return (
     <div>
-      {/* <nav>
-        <img src="./img/logo.jpg" alt="" width={150} />
-      </nav> */}
+      <Navbar />
       <div className="header">
         <div className="esquerda">
         <h1>Breaking Bad</h1>
