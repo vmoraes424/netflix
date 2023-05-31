@@ -1,9 +1,9 @@
 import axios from "axios";
-export async function getData(url) {
+export async function getData(endpoint) {
   const api_key = "5f080ba816591e52e96822a9e1fdbcf9";
   const options = {
     method: "GET",
-    url: `${url}?api_key=${api_key}`,
+    url: `https://api.themoviedb.org/3/${endpoint}?api_key=${api_key}`,
     headers: {
       accept: "application/json",
       Authorization:
