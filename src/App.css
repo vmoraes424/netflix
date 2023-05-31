@@ -77,3 +77,13 @@ nav {
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
 }
+
+.esquerda {
+  inset: 0;
+  margin: auto 3rem;
+  z-index: 3;
+}
+
+.esquerda h3 {
+margin: 1rem 0;
+}

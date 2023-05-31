@@ -32,9 +32,9 @@ const App = () => {
       </nav> */}
       <div className="header">
         <div className="esquerda">
-          
         <h1>Breaking Bad</h1>
-        <p>When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.</p>
+        <h3>☆☆☆☆☆ &nbsp; 2012 • 5 temporadas</h3>
+        <p>When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live.</p>
         </div>
         <img
           src={`https://image.tmdb.org/t/p/original/84XPpjGvxNyExjSuLQe0SzioErt.jpg?api_key=${API_KEY}`}
