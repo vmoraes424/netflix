@@ -25,7 +25,7 @@ nav {
 .filmes {
   display: flex;
   gap: 1rem;
-  margin:0 1rem;
+  margin: 0 1rem;
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent; 

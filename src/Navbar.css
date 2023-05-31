@@ -1,11 +1,20 @@
 nav {
-    position: fixed;
     width: 100%;
-    height: 60px;
     background-color: black;
     z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav img {
-    width: 120px;
+.direita {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.direita img {
+    cursor: pointer;
 }
