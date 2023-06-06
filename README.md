@@ -7,5 +7,6 @@ Esse é um projeto feito para um trabalho da faculdade onde eu crio uma cópia d
 
 - ReactJS
 - Axios
+- React Router DOM
 ### API Utilizada
 - The Movie DB
