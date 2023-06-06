@@ -1,0 +1,38 @@
+.texto {
+  font-size: 3rem;
+}
+
+.container-contas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+.avatares {
+  display: flex;
+  margin-top: 1rem;
+}
+figure {
+  text-align: center;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+figcaption {
+margin: 1rem;
+}
+.avatares .avatar {
+  width: 200px;
+  margin: 0 1.5rem;
+  border-radius: 5px;
+}
+
+.container-contas button {
+  margin: 2rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}

@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Erro from './404/Erro.jsx';
+import Contas from './Contas/Contas.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/*",
     element: <Erro />,
+  },
+  {
+    path: "/contas",
+    element: <Contas />,
   }
 ]);
 

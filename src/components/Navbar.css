@@ -8,14 +8,12 @@ nav {
   align-items: center;
 }
 
-.direita {
+.avatar {
   margin-right: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-}
-.direita img {
   cursor: pointer;
 }
 
@@ -66,3 +64,7 @@ nav hr {
   text-decoration: none;
   color: white;
 }
+
+a:link {
+    text-decoration: none;
+  }
