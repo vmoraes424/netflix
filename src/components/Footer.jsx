@@ -8,7 +8,7 @@ export default function Footer() {
         <hr />
         <p>
           Feito por{" "}
-          <a href="https://github.com/vmoraes424" target="_blank">
+          <a href="https://github.com/vmoraes424/netflix" target="_blank">
             Vinícius
           </a>
         </p>

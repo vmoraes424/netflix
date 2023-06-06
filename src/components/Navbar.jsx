@@ -5,6 +5,11 @@ const Navbar = ({ color }) => {
   function popup() {
     const popup = document.querySelector(".wrapper");
     popup.classList.toggle("ativo");
+    if(popup.classList == "ativo") {
+        window.addEventListener("click", () => {
+            popup.classList.toggle("ativo")
+        })
+    }
   }
 
   return (
