@@ -1,0 +1,68 @@
+nav {
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direita {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.direita img {
+  cursor: pointer;
+}
+
+.wrapper {
+  position: absolute;
+  background-color: #020202;
+  width: 150px;
+  height: 250px;
+  top: 40px;
+  right: 0;
+  margin: 2rem;
+  z-index: -100;
+  display: none;
+}
+
+.ativo {
+  display: block;
+}
+
+nav hr {
+  width: 100%;
+  height: 1px;
+  background-color: #2e2e2e;
+  border: none;
+}
+.cima {
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.baixo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+.cima p {
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+}
+.baixo p {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getData } from "./request";
 import "./App.css";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [populares, setPopulares] = useState([]);
@@ -24,13 +25,14 @@ const App = () => {
 
   useEffect(() => {
     usarDadosDaAPI();
+    setCor("transparent");
     window.addEventListener("scroll", scroll)
     return () => window.removeEventListener("scroll", scroll)
   }, []);
 
   const [cor, setCor] = useState("");
 
-  function scroll(e) {
+  function scroll() {
     if (window.scrollY <= 100) {
       setCor("transparent");
     } else {
@@ -40,7 +42,7 @@ const App = () => {
 
   return (
     <div>
-      <Navbar color={cor} className="nav"/>
+      <Navbar color={cor}/>
       <div className="header">
         <div className="esquerda">
           <h1>Breaking Bad</h1>
@@ -96,6 +98,7 @@ const App = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
