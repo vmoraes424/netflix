@@ -13,27 +13,43 @@ const App = () => {
     const top_rated = await getData("movie/top_rated");
     const agora_tocando = await getData("tv/top_rated");
     const populares = [...popular.results];
-    const top = [...top_rated.results]
-    const agora = [...agora_tocando.results]
+    const top = [...top_rated.results];
+    const agora = [...agora_tocando.results];
     setPopulares(populares);
-    setTopRated(top)
-    setAgora(agora)
+    setTopRated(top);
+    setAgora(agora);
   }
 
-  const API_KEY = "5f080ba816591e52e96822a9e1fdbcf9"
+  const API_KEY = "5f080ba816591e52e96822a9e1fdbcf9";
 
   useEffect(() => {
     usarDadosDaAPI();
+    window.addEventListener("scroll", scroll)
+    return () => window.removeEventListener("scroll", scroll)
   }, []);
+
+  const [cor, setCor] = useState("");
+
+  function scroll(e) {
+    if (window.scrollY <= 100) {
+      setCor("transparent");
+    } else {
+      setCor("black");
+    }
+  }
 
   return (
     <div>
-      <Navbar />
+      <Navbar color={cor} className="nav"/>
       <div className="header">
         <div className="esquerda">
-        <h1>Breaking Bad</h1>
-        <h3>☆☆☆☆☆ &nbsp; 2012 • 5 temporadas</h3>
-        <p>When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live.</p>
+          <h1>Breaking Bad</h1>
+          <h3>☆☆☆☆☆ &nbsp; 2012 • 5 temporadas</h3>
+          <p>
+            When Walter White, a New Mexico chemistry teacher, is diagnosed with
+            Stage III cancer and given a prognosis of only two years left to
+            live.
+          </p>
         </div>
         <img
           src={`https://image.tmdb.org/t/p/original/84XPpjGvxNyExjSuLQe0SzioErt.jpg?api_key=${API_KEY}`}
