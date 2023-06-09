@@ -26,8 +26,8 @@ const App = () => {
   useEffect(() => {
     usarDadosDaAPI();
     setCor("transparent");
-    window.addEventListener("scroll", scroll)
-    return () => window.removeEventListener("scroll", scroll)
+    window.addEventListener("scroll", scroll);
+    return () => window.removeEventListener("scroll", scroll);
   }, []);
 
   const [cor, setCor] = useState("");
@@ -42,7 +42,7 @@ const App = () => {
 
   return (
     <div>
-      <Navbar color={cor}/>
+      <Navbar color={cor} />
       <div className="header">
         <div className="esquerda">
           <h1>Breaking Bad</h1>
@@ -57,6 +57,7 @@ const App = () => {
           src={`https://image.tmdb.org/t/p/original/84XPpjGvxNyExjSuLQe0SzioErt.jpg?api_key=${API_KEY}`}
           alt=""
           className="image-container"
+          loading="lazy"
         />
       </div>
       <div className="populares">

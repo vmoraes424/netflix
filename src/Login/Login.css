@@ -1,0 +1,55 @@
+.container {
+  overflow: hidden;
+}
+
+#bg-principal {
+  opacity: 50%;
+  z-index: -100;
+  position: absolute;
+}
+.wrapper-form {
+  padding: 60px 68px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  margin-bottom: 90px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 314px;
+}
+
+form input {
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  padding: 0.7rem;
+}
+
+form input[type="button"] {
+  background-color: #e50914;
+  color: white;
+  font-size: 1rem;
+}
+.lembre {
+  display: flex;
+  gap: 0.5rem;
+}
+.embaixo {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.embaixo,
+.embaixo a {
+  color: gray;
+}
+
+.embaixo a:hover {
+  text-decoration: underline;
+}
