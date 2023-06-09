@@ -1,7 +1,9 @@
 .texto {
   font-size: 3rem;
 }
-
+#logo {
+  margin: 1.5rem;
+}
 .container-contas {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@ figure {
 }
 
 figcaption {
-margin: 1rem;
+  margin: 1rem;
 }
 .avatares .avatar {
   width: 200px;

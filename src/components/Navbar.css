@@ -4,6 +4,7 @@ nav {
   z-index: 10;
   position: fixed;
   display: flex;
+  padding: 1.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,5 +67,5 @@ nav hr {
 }
 
 a:link {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
