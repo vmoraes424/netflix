@@ -1,0 +1,93 @@
+.logo-editar {
+width: 150px;
+margin: 2rem;
+}
+.editar {
+  width: 600px;
+  position: absolute;
+  inset: 0;
+  margin: 1rem auto;
+}
+.dentro {
+  font-size: 1rem;
+}
+#idioma {
+  width: 120px;
+  background-color: transparent;
+  color: white;
+}
+.idioma {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+input[type="checkbox"] {
+  margin: 0.5rem;
+}
+.controles label {
+  font-size: 12px;
+}
+option {
+  background-color: black;
+  color: white;
+}
+.editar input {
+  background-color: rgb(102 102 102);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.primeiro-hr {
+  margin-bottom: 1rem;
+}
+.editar-meio hr, .ultimo-hr {
+  margin: 2rem 0;
+}
+.editar-meio {
+  display: flex;
+  gap: 1rem;
+}
+.editar-esquerda img {
+  width: 100px;
+}
+.game-id p,
+.etaria p {
+  font-size: 14px;
+}
+.editar-direita {
+  display: flex;
+  flex-direction: column;
+}
+.etaria-btn {
+  padding: 0 0.5rem;
+  background-color: rgb(51, 51, 51);
+  border: none;
+  color: white;
+}
+.editar-button {
+  padding: 0.2rem 1rem;
+  background-color: transparent;
+  color: rgb(102, 102, 102);
+  border: 1px solid rgb(102, 102, 102);
+  cursor: pointer;
+}
+.editar-baixo {
+    display: flex;
+    gap: 1rem;
+}
+.salvar {
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold;
+}
+.botao {
+  padding: 0.2rem 1rem;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(102, 102, 102);
+  border: 1px solid rgb(102, 102, 102);
+  cursor: pointer;
+}
+

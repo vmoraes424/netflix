@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Erro from "./404/Erro.jsx";
 import Contas from "./Contas/Contas.jsx";
 import Login from "./Login/Login.jsx";
+import Editar from "./Contas/Editar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/contas",
     element: <Contas />,
+  },
+  {
+    path: "/contas/editar",
+    element: <Editar />,
   },
   {
     path: "/login",

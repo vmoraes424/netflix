@@ -23,14 +23,11 @@ const Navbar = ({ color }) => {
       <div className="wrapper">
         <div className="cima">
           <img src="../img/avatar.png" alt="" width={40} />
-          <Link to={""}>
-            <p>Gerenciar Perfil</p>
-          </Link>
         </div>
         <hr />
         <div className="baixo">
           <Link to={"/contas"}>
-            <p>Conta</p>
+            <p>Contas</p>
           </Link>
           <Link to={"https://help.netflix.com/pt"} target="_blank">
             <p>Ajuda</p>

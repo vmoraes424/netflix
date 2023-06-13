@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contas.css";
 import { Link } from "react-router-dom";
 
 export default function Contas() {
+
+  const [gerenciar, setGerenciar] = useState("gerenciar perfil")
+
   return (
     <>
       <Link to={"/"}>
@@ -12,24 +15,24 @@ export default function Contas() {
         <div className="texto">Quem está assistindo?</div>
         <div className="avatares">
           <figure>
-            <img src="../img/avatar.png" alt="" className="avatar" />
+            <Link to={"editar"}><img src="../img/avatar.png" alt="" className="avatar" /></Link>
             <figcaption>Vinícius</figcaption>
           </figure>
           <figure>
-            <img src="../img/avatar2.png" alt="" className="avatar" />
+          <Link to={"editar"}><img src="../img/avatar2.png" alt="" className="avatar" /></Link>
             <figcaption>Ítalo</figcaption>
           </figure>
           <figure>
-            <img src="../img/avatar3.png" alt="" className="avatar" />
+          <Link to={"editar"}><img src="../img/avatar3.png" alt="" className="avatar" /></Link>
             <figcaption>Hans</figcaption>
           </figure>
           <figure>
-            <img src="../img/avatar4.png" alt="" className="avatar" />
+          <Link to={"editar"}><img src="../img/avatar4.png" alt="" className="avatar" /></Link>
             <figcaption>Mendes</figcaption>
           </figure>
         </div>
 
-        <button>GERENCIAR PERFIL</button>
+        <button className="gerenciar">{gerenciar.toUpperCase()}</button>
       </div>
     </>
   );
