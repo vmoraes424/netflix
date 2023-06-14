@@ -2,7 +2,7 @@
 Este projeto é uma cópia do Netflix, desenvolvida utilizando React, React Router DOM, Axios e a API do The Movie DB.
 
 ## Descrição
-Este é um clone do Netflix, uma plataforma de streaming de vídeo, onde os usuários podem visualizar informações sobre filmes e séries, assistir a trailers e realizar buscas por títulos específicos. O site é alimentado pela API do The Movie DB, que fornece dados atualizados sobre filmes e séries.
+Este é um clone do Netflix, uma plataforma de streaming de vídeo, onde os usuários podem visualizar informações sobre filmes e séries, assistir a trailers e realizar buscas por títulos específicos. O site é alimentado pela API do The Movie DB, que fornece dados atualizados sobre filmes e séries. Essa cópia é apenas visual, ou seja, os elementos como assistir a algum filme, mudar de conta, registro, etc não funcionam.
 
 ## Funcionalidades
 * Exibição de filmes e séries em destaque na página inicial.
